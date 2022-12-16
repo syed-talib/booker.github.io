@@ -1,0 +1,368 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+   
+   
+}
+body,html{
+    height: 100%;
+    background: url('backimg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.MainBox{
+   position: relative;
+  
+
+    
+}
+.MainBox .content2 .items{
+    text-align: center;
+    position:relative;
+}
+.MainBox .content2 .items .name{
+    position: absolute;
+    z-index: 1;
+    top: 80%;left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.MainBox .bar i{
+    display: none;
+}
+.MainBox .head{
+       height: 80px;
+       width: 100%;
+       background: rgb(162, 162, 162);
+       position:fixed;
+       top: 0;
+       z-index:9999;
+       display: flex;
+       justify-content: space-between;
+     
+}
+.MainBox .logo{
+    position: relative;
+    margin-left:20px;
+}
+.MainBox .logo .logolabel{
+   position: absolute;
+   top:58px;left:10px;
+   color:black;
+   font-size: 20px;
+   letter-spacing: 1px;
+  
+}
+.MainBox .head .links ul{
+    display: flex;
+    line-height: 80px;
+    margin-right: 250px;
+}
+.MainBox .head .links ul li{
+   
+    list-style: none;
+}
+a{
+      text-decoration: none;
+      margin-left: 60px;
+     
+      color: black;
+      font-weight: 600;
+      text-transform: capitalize;
+     
+     
+    
+     
+}    
+a:hover,a:focus{
+   
+    
+    border-bottom: 1px solid black;
+   
+   
+    
+}
+
+
+.MainBox .content{
+     position: absolute;
+     top: 150px;
+}
+
+.MainBox .content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+.MainBox .content .image{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.MainBox .content .text{
+    height:500px;
+    width: 500px;
+    gap: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+.MainBox .content .text h1,p{
+   color: black;
+    font-weight: 800;
+}
+h1{
+      font-size: 40px;
+}
+
+
+.MainBox .content .text .btn button{
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    background: black;
+    color: white;
+   
+    filter: drop-shadow(0px 5px 5px black);
+    text-transform: capitalize;
+    cursor: pointer;
+}#cof{
+        text-transform: uppercase;
+        color: white;
+        font-size: 50px;
+        background: black;
+        padding: 5px 20px;
+        border-radius: 5px;
+}
+.MainBox .content2{
+    position: absolute;
+    top: 950px;
+}
+.MainBox .content2{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+   
+}
+.MainBox .content2>.items{
+    height: 300px;
+    width: 300px;
+  
+    
+}
+.MainBox .content2 .items img{
+    border-radius: 10px;
+    transform: rotate(10deg);
+    transition:.5s;
+}
+.MainBox .content2 .items img:hover,:active{
+    transform: rotate(0deg);
+}
+.MainBox .secondhead{
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 22px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    border-radius: 20px;
+    
+   
+}
+.MainBox .footer{
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top:1600px;
+    background: white;
+}
+.MainBox .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.MainBox .footer li{
+    list-style: none;
+    text-transform: capitalize;
+
+}
+.MainBox .footer .imgf{
+   position: absolute;
+   top: 200px;
+   filter: drop-shadow(0px 5px 5px black);
+}
+
+@media(max-width:640px){
+   
+    .MainBox .head{
+        height:80px;
+        
+        max-width: 100%;
+      
+       
+    }
+    
+    .MainBox .logo{
+       margin-left: 10px;
+        
+
+    }
+
+    .MainBox .head .links ul{
+        display: flex;
+        line-height: 80px;
+        margin-right: 20px;
+      
+       
+    }
+    a{
+        text-decoration: none;
+        margin-left: 30px;
+       
+        color: black;
+        font-weight: 600;
+        text-transform: capitalize;
+       
+       
+      
+       
+  }    
+
+    .MainBox .content{
+        position: absolute;
+        top: 220px;
+   }
+
+   .MainBox .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.MainBox .content .image{
+    height: 200px;
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.MainBox .content .text{
+    height:500px;
+    max-width:100%;
+    gap: 40px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.MainBox .content .text h1,p{
+    color: black;
+     font-weight: 400;
+ }
+ h1{
+       font-size: 20px;
+ }
+
+ .MainBox .content .text .btn button{
+    padding: 10px 20px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background: black;
+    color: white;
+   
+    filter: drop-shadow(0px 5px 5px black);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#cof{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    background: black;
+    padding: 5px 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 55%;left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+.MainBox .content2{
+    position: absolute;
+    top: 1180px;
+}
+.MainBox .content2{
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
+   gap: 0;
+   
+}
+.MainBox .content2>.items{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+   
+   
+    
+}
+.MainBox .content2 .items  img{
+    border-radius: 5px;
+}
+.MainBox .secondhead{
+    position: absolute;
+    top: 1100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 10px;
+
+}
+    
+}
+/* head complete */
+
+
